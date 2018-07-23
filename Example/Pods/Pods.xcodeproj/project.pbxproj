@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		199D853AC81C3FB03B9A4FA652CC1097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		11FF7EB82105DCD400805706 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EB72105DCD400805706 /* Service.swift */; };
+		199D853AC81C3FB03B9A4FA652CC1097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		23B4D4B6EFB43B2E8D06442A6E3ED33B /* Pods-AHTopTabBarViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A32FF0800C6ABD8C02A59740614B672B /* Pods-AHTopTabBarViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D6692730F12478C0B85C9FCBE9326E1 /* Pods-AHTopTabBarViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B47CB922A96D4496E5575C38DEDEC7F /* Pods-AHTopTabBarViewController_Tests-dummy.m */; };
+		3F98A528D353A36B597133089E5956C9 /* AHTopTabBarViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D0F705CEC0CFD9E5E73ED376B8CBF1 /* AHTopTabBarViewController-dummy.m */; };
 		4C44A98C84BAD9BD89110615B11FA996 /* Pods-AHTopTabBarViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B395A607182DFD2A31824F240CBF91 /* Pods-AHTopTabBarViewController_Example-dummy.m */; };
-		6BD6BF5BDA3000A20893835AAEAA3FCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6BD6BF5BDA3000A20893835AAEAA3FCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		7B3443BCDBC5F4843002F7ED1AFAC2A9 /* Pods-AHTopTabBarViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A1662EF0A37257AB49F21A8C381CE4 /* Pods-AHTopTabBarViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA585B26734E7155AB1B8E7EAC088571 /* AHTopTabBarViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D995D9616187DDA234EB8E95E17B162E /* AHTopTabBarViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E734A2C0CA0E24F2289C9B6461EA0678 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		ECA27AA1A8D5A390064FDDC4EF7F406D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0026C57CBC749603500C1CC299ED9E /* ReplaceMe.swift */; };
-		F224B07165C67364983EB44B27482014 /* AHTopTabBarViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D0F705CEC0CFD9E5E73ED376B8CBF1 /* AHTopTabBarViewController-dummy.m */; };
+		8484DA863DB63ABDAE677463DF3134E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		FC7D7BEF74680C7FC89A712B835C3807 /* AHTopTabBarViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D995D9616187DDA234EB8E95E17B162E /* AHTopTabBarViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDD343AB44023E1B4495FD2D058AAB5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AFBEF8131DB44BAA7919339B0530C49D;
+			remoteGlobalIDString = F56D089778B5BF9B99480976FE85FC1F;
 			remoteInfo = AHTopTabBarViewController;
 		};
 		E1DB5A0F5FD5CE760F72E9D336650119 /* PBXContainerItemProxy */ = {
@@ -38,43 +39,53 @@
 
 /* Begin PBXFileReference section */
 		0682EE6AAB5596E158AA039A50D7756C /* Pods-AHTopTabBarViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHTopTabBarViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		11FF7EB72105DCD400805706 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		16DB16EA11F4B50528C0B5EAD9A23A93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1889FE8827865F8C6C2F6B41037B144F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241F11F5F692AA9C99FCD7048329871E /* AHTopTabBarViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AHTopTabBarViewController.modulemap; sourceTree = "<group>"; };
 		316D089D4F8C2E44684066F047C7D6E0 /* Pods-AHTopTabBarViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHTopTabBarViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		47741F66A99EB77260835E613C94DD92 /* AHTopTabBarViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHTopTabBarViewController.framework; path = AHTopTabBarViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47741F66A99EB77260835E613C94DD92 /* AHTopTabBarViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHTopTabBarViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4900DDCAA989D9B1372141A6E4EC03B7 /* Pods-AHTopTabBarViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AHTopTabBarViewController_Example.modulemap"; sourceTree = "<group>"; };
 		4A007E878A6AFBE23C7E75F63BE6EB63 /* Pods-AHTopTabBarViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHTopTabBarViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B47CB922A96D4496E5575C38DEDEC7F /* Pods-AHTopTabBarViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHTopTabBarViewController_Tests-dummy.m"; sourceTree = "<group>"; };
-		62659EBD49D54BE3C0047623F71AAD34 /* AHTopTabBarViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AHTopTabBarViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62659EBD49D54BE3C0047623F71AAD34 /* AHTopTabBarViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AHTopTabBarViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75B395A607182DFD2A31824F240CBF91 /* Pods-AHTopTabBarViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHTopTabBarViewController_Example-dummy.m"; sourceTree = "<group>"; };
 		93A1C70F0FD5E7406B506DCFC606A481 /* Pods-AHTopTabBarViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHTopTabBarViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9756B8852B9726A7635E9AFCA5C0E9A9 /* Pods-AHTopTabBarViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHTopTabBarViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A32FF0800C6ABD8C02A59740614B672B /* Pods-AHTopTabBarViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHTopTabBarViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		A7DFE9205A3B4B01CC931F17BB2D5CFE /* Pods-AHTopTabBarViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AHTopTabBarViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		A7E5FE24A5ECE1A373FDC4070B2CA227 /* Pods-AHTopTabBarViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHTopTabBarViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AC0026C57CBC749603500C1CC299ED9E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AHTopTabBarViewController/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		ACF7DC369E842C22DD470A29A293A86D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		ACF7DC369E842C22DD470A29A293A86D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BB1A61DE089ACDF5574B87789B022FE4 /* Pods-AHTopTabBarViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHTopTabBarViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BDB679C7565C134F25B3BAFC1C1B09ED /* Pods-AHTopTabBarViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHTopTabBarViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C6D26115022F60A22B1CE7D203C13139 /* Pods_AHTopTabBarViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHTopTabBarViewController_Example.framework; path = "Pods-AHTopTabBarViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D26115022F60A22B1CE7D203C13139 /* Pods_AHTopTabBarViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHTopTabBarViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8666924A2758370D2D5D02A2E35F75A /* Pods-AHTopTabBarViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHTopTabBarViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C8D0F705CEC0CFD9E5E73ED376B8CBF1 /* AHTopTabBarViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHTopTabBarViewController-dummy.m"; sourceTree = "<group>"; };
 		CE141D06C00FC73C1940E27E4C096673 /* AHTopTabBarViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHTopTabBarViewController-prefix.pch"; sourceTree = "<group>"; };
-		D0ED93B48AC22253C04975FDB9C67D0C /* Pods_AHTopTabBarViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHTopTabBarViewController_Tests.framework; path = "Pods-AHTopTabBarViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0ED93B48AC22253C04975FDB9C67D0C /* Pods_AHTopTabBarViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHTopTabBarViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A1662EF0A37257AB49F21A8C381CE4 /* Pods-AHTopTabBarViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHTopTabBarViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D995D9616187DDA234EB8E95E17B162E /* AHTopTabBarViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHTopTabBarViewController-umbrella.h"; sourceTree = "<group>"; };
 		E3C29C9272B910F18BF4BE1A975CF581 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E8254195AD200E0B230D1852F3F93D /* Pods-AHTopTabBarViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHTopTabBarViewController_Example-resources.sh"; sourceTree = "<group>"; };
-		F4894638C10CD7FF29232C07CAF50960 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F4894638C10CD7FF29232C07CAF50960 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F6AEEC1B3CE7D85C4F9EDCFCE5B747B5 /* Pods-AHTopTabBarViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHTopTabBarViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FA310A02B231269E11A508E2BFE95DA4 /* Pods-AHTopTabBarViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHTopTabBarViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FCE828847CB7BCAEF2DD3FB070711473 /* AHTopTabBarViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHTopTabBarViewController.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0281B5249AA903BC00697F523C56A7DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD343AB44023E1B4495FD2D058AAB5C /* Foundation.framework in Frameworks */,
+				8484DA863DB63ABDAE677463DF3134E9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		366E452173C7544D01810AF6E1FE28C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,17 +102,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF90B51CEFA195080BF7BBA018BFFDEA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E734A2C0CA0E24F2289C9B6461EA0678 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11FF7EB62105DC9300805706 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				11FF7EB72105DCD400805706 /* Service.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		335CBA1CCA457C24A9635A8C0170A44E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +121,23 @@
 				D0ED93B48AC22253C04975FDB9C67D0C /* Pods_AHTopTabBarViewController_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		447285EC422AE5B4201778C449F8232A /* Pod */ = {
@@ -139,7 +167,7 @@
 		6A6211166FAA519A0B96CEB78CB031F1 /* AHTopTabBarViewController */ = {
 			isa = PBXGroup;
 			children = (
-				AC0026C57CBC749603500C1CC299ED9E /* ReplaceMe.swift */,
+				11FF7EB62105DC9300805706 /* Source */,
 				447285EC422AE5B4201778C449F8232A /* Pod */,
 				4BB756537D3CB670A55B433BEFDBDE04 /* Support Files */,
 			);
@@ -152,7 +180,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				7F6F4873E429F518C16CD273C4E60B3F /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				335CBA1CCA457C24A9635A8C0170A44E /* Products */,
 				904957436DD269B24D9E04AC2C132E6C /* Targets Support Files */,
 			);
@@ -193,22 +221,6 @@
 			path = "Target Support Files/Pods-AHTopTabBarViewController_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		F19490C9CA968ABBCC1C52FBE6CD2967 /* Pods-AHTopTabBarViewController_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,11 +250,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B76BFF1F08BDB3547A869464352CF022 /* Headers */ = {
+		9F370B00F355FA96975DB411EE3BE38F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA585B26734E7155AB1B8E7EAC088571 /* AHTopTabBarViewController-umbrella.h in Headers */,
+				FC7D7BEF74680C7FC89A712B835C3807 /* AHTopTabBarViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,13 +305,13 @@
 			productReference = D0ED93B48AC22253C04975FDB9C67D0C /* Pods_AHTopTabBarViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AFBEF8131DB44BAA7919339B0530C49D /* AHTopTabBarViewController */ = {
+		F56D089778B5BF9B99480976FE85FC1F /* AHTopTabBarViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CAC2C4D6FD6DDA67F186935C18491DC /* Build configuration list for PBXNativeTarget "AHTopTabBarViewController" */;
+			buildConfigurationList = 1B0E404FAB8D82EBFF863EC87FBA7A92 /* Build configuration list for PBXNativeTarget "AHTopTabBarViewController" */;
 			buildPhases = (
-				1EFC7106568CECC79749819A1599BCA3 /* Sources */,
-				EF90B51CEFA195080BF7BBA018BFFDEA /* Frameworks */,
-				B76BFF1F08BDB3547A869464352CF022 /* Headers */,
+				8194515CF8B1FDEEF62F7C0FF98FE2FE /* Sources */,
+				0281B5249AA903BC00697F523C56A7DE /* Frameworks */,
+				9F370B00F355FA96975DB411EE3BE38F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -317,7 +329,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					F56D089778B5BF9B99480976FE85FC1F = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -331,7 +348,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFBEF8131DB44BAA7919339B0530C49D /* AHTopTabBarViewController */,
+				F56D089778B5BF9B99480976FE85FC1F /* AHTopTabBarViewController */,
 				203FEAEA7E7E10F5D66BBB3292799826 /* Pods-AHTopTabBarViewController_Example */,
 				44FD40E7CAAC4B350B1648F7DF3CBCAE /* Pods-AHTopTabBarViewController_Tests */,
 			);
@@ -339,20 +356,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1EFC7106568CECC79749819A1599BCA3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F224B07165C67364983EB44B27482014 /* AHTopTabBarViewController-dummy.m in Sources */,
-				ECA27AA1A8D5A390064FDDC4EF7F406D /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36D62E432E97FCBDA507B3FAD489D2C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3D6692730F12478C0B85C9FCBE9326E1 /* Pods-AHTopTabBarViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8194515CF8B1FDEEF62F7C0FF98FE2FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F98A528D353A36B597133089E5956C9 /* AHTopTabBarViewController-dummy.m in Sources */,
+				11FF7EB82105DCD400805706 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +387,7 @@
 		45446848B488F238C422F6B9F77957C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AHTopTabBarViewController;
-			target = AFBEF8131DB44BAA7919339B0530C49D /* AHTopTabBarViewController */;
+			target = F56D089778B5BF9B99480976FE85FC1F /* AHTopTabBarViewController */;
 			targetProxy = 8DC88CB08350736AE8D8EB24F283AFE9 /* PBXContainerItemProxy */;
 		};
 		8B57CEB55C31E3669B68BD00EFAFF196 /* PBXTargetDependency */ = {
@@ -382,209 +399,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0D267E2A8510B1A3AD93490127916180 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7E5FE24A5ECE1A373FDC4070B2CA227 /* Pods-AHTopTabBarViewController_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Tests/Pods-AHTopTabBarViewController_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		146E53CB96A0DF3E554652C1272F6DF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCE828847CB7BCAEF2DD3FB070711473 /* AHTopTabBarViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AHTopTabBarViewController/AHTopTabBarViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AHTopTabBarViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AHTopTabBarViewController/AHTopTabBarViewController.modulemap";
-				PRODUCT_MODULE_NAME = AHTopTabBarViewController;
-				PRODUCT_NAME = AHTopTabBarViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2998E7CA7D0DEA1C91BFDF9528DBF203 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A007E878A6AFBE23C7E75F63BE6EB63 /* Pods-AHTopTabBarViewController_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Tests/Pods-AHTopTabBarViewController_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		35CEF9CFBCE3C96A71F502DB4651F442 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCE828847CB7BCAEF2DD3FB070711473 /* AHTopTabBarViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AHTopTabBarViewController/AHTopTabBarViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AHTopTabBarViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AHTopTabBarViewController/AHTopTabBarViewController.modulemap";
-				PRODUCT_MODULE_NAME = AHTopTabBarViewController;
-				PRODUCT_NAME = AHTopTabBarViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		53C6F313CF344231300136EA034A2EE0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB1A61DE089ACDF5574B87789B022FE4 /* Pods-AHTopTabBarViewController_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Example/Pods-AHTopTabBarViewController_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		770D51581F57DE27D11594D14F8C019C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDB679C7565C134F25B3BAFC1C1B09ED /* Pods-AHTopTabBarViewController_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Example/Pods-AHTopTabBarViewController_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -637,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,7 +462,7 @@
 			};
 			name = Debug;
 		};
-		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -697,22 +512,231 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B1202A7AADCDC264B2B0095F662C52B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDB679C7565C134F25B3BAFC1C1B09ED /* Pods-AHTopTabBarViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Example/Pods-AHTopTabBarViewController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B97549BA35167A890201C62B94AF04E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1A61DE089ACDF5574B87789B022FE4 /* Pods-AHTopTabBarViewController_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Example/Pods-AHTopTabBarViewController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1B622714A8751F1FEDBE27D6DF720F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A007E878A6AFBE23C7E75F63BE6EB63 /* Pods-AHTopTabBarViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Tests/Pods-AHTopTabBarViewController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C3264560CDFE9A5C57B17AAB29FD18D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE828847CB7BCAEF2DD3FB070711473 /* AHTopTabBarViewController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AHTopTabBarViewController/AHTopTabBarViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHTopTabBarViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHTopTabBarViewController/AHTopTabBarViewController.modulemap";
+				PRODUCT_MODULE_NAME = AHTopTabBarViewController;
+				PRODUCT_NAME = AHTopTabBarViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C93B050AD9187DE241338F8823A0466B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE828847CB7BCAEF2DD3FB070711473 /* AHTopTabBarViewController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AHTopTabBarViewController/AHTopTabBarViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHTopTabBarViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHTopTabBarViewController/AHTopTabBarViewController.modulemap";
+				PRODUCT_MODULE_NAME = AHTopTabBarViewController;
+				PRODUCT_NAME = AHTopTabBarViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F65F87B8ED8B86EB158BC3E97DBF4B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E5FE24A5ECE1A373FDC4070B2CA227 /* Pods-AHTopTabBarViewController_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHTopTabBarViewController_Tests/Pods-AHTopTabBarViewController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CAC2C4D6FD6DDA67F186935C18491DC /* Build configuration list for PBXNativeTarget "AHTopTabBarViewController" */ = {
+		1B0E404FAB8D82EBFF863EC87FBA7A92 /* Build configuration list for PBXNativeTarget "AHTopTabBarViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				146E53CB96A0DF3E554652C1272F6DF1 /* Debug */,
-				35CEF9CFBCE3C96A71F502DB4651F442 /* Release */,
+				C3264560CDFE9A5C57B17AAB29FD18D6 /* Debug */,
+				C93B050AD9187DE241338F8823A0466B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -720,8 +744,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
-				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
+				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -729,8 +753,8 @@
 		598BC9605C652E1CCE74AA0E35879CE3 /* Build configuration list for PBXNativeTarget "Pods-AHTopTabBarViewController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				770D51581F57DE27D11594D14F8C019C /* Debug */,
-				53C6F313CF344231300136EA034A2EE0 /* Release */,
+				B1202A7AADCDC264B2B0095F662C52B9 /* Debug */,
+				B97549BA35167A890201C62B94AF04E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -738,8 +762,8 @@
 		AA8981A439B8E825040030DECB98D200 /* Build configuration list for PBXNativeTarget "Pods-AHTopTabBarViewController_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2998E7CA7D0DEA1C91BFDF9528DBF203 /* Debug */,
-				0D267E2A8510B1A3AD93490127916180 /* Release */,
+				C1B622714A8751F1FEDBE27D6DF720F3 /* Debug */,
+				F65F87B8ED8B86EB158BC3E97DBF4B32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

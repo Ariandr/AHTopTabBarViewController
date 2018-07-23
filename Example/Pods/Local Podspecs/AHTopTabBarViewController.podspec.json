@@ -1,22 +1,24 @@
 {
   "name": "AHTopTabBarViewController",
   "version": "0.1.0",
-  "summary": "A short description of AHTopTabBarViewController.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "View controller for managing tabs on the top of a screen in iOS apps",
+  "description": "View controller for managing tabs on the top of a screen in iOS apps. Highly customizable.",
   "homepage": "https://github.com/Ariandr/AHTopTabBarViewController",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Ariandr": "sanya.goncharov.1995@gmail.com"
+    "Aleksandr Honcharov": "sanya.goncharov.1995@gmail.com"
   },
   "source": {
     "git": "https://github.com/Ariandr/AHTopTabBarViewController.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "AHTopTabBarViewController/Classes/**/*"
+  "swift_version": "4.2",
+  "source_files": "AHTopTabBarViewController/Classes/**/*",
+  "frameworks": "UIKit"
 }
