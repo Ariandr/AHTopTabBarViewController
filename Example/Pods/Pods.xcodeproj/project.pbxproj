@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11FF7EB82105DCD400805706 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EB72105DCD400805706 /* Service.swift */; };
+		11FF7EBB21060A6400805706 /* AHTopTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EBA21060A6400805706 /* AHTopTabBarViewController.swift */; };
+		11FF7EBD21060AEB00805706 /* AHTopTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EBC21060AEB00805706 /* AHTopTabBarView.swift */; };
+		11FF7EC021060D4400805706 /* AHContentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EBF21060D4400805706 /* AHContentPageViewController.swift */; };
+		11FF7EC42106247100805706 /* AHContentPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EC32106247100805706 /* AHContentPageViewControllerDelegate.swift */; };
+		11FF7EC721062C6600805706 /* AHTopBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EC621062C6600805706 /* AHTopBarItem.swift */; };
+		11FF7ECA21062DAA00805706 /* AHBasicTopTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */; };
 		199D853AC81C3FB03B9A4FA652CC1097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		23B4D4B6EFB43B2E8D06442A6E3ED33B /* Pods-AHTopTabBarViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A32FF0800C6ABD8C02A59740614B672B /* Pods-AHTopTabBarViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D6692730F12478C0B85C9FCBE9326E1 /* Pods-AHTopTabBarViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B47CB922A96D4496E5575C38DEDEC7F /* Pods-AHTopTabBarViewController_Tests-dummy.m */; };
@@ -39,7 +44,12 @@
 
 /* Begin PBXFileReference section */
 		0682EE6AAB5596E158AA039A50D7756C /* Pods-AHTopTabBarViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHTopTabBarViewController_Tests-resources.sh"; sourceTree = "<group>"; };
-		11FF7EB72105DCD400805706 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		11FF7EBA21060A6400805706 /* AHTopTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHTopTabBarViewController.swift; sourceTree = "<group>"; };
+		11FF7EBC21060AEB00805706 /* AHTopTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHTopTabBarView.swift; sourceTree = "<group>"; };
+		11FF7EBF21060D4400805706 /* AHContentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHContentPageViewController.swift; sourceTree = "<group>"; };
+		11FF7EC32106247100805706 /* AHContentPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHContentPageViewControllerDelegate.swift; sourceTree = "<group>"; };
+		11FF7EC621062C6600805706 /* AHTopBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHTopBarItem.swift; sourceTree = "<group>"; };
+		11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHBasicTopTabBarItem.swift; sourceTree = "<group>"; };
 		16DB16EA11F4B50528C0B5EAD9A23A93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1889FE8827865F8C6C2F6B41037B144F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241F11F5F692AA9C99FCD7048329871E /* AHTopTabBarViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AHTopTabBarViewController.modulemap; sourceTree = "<group>"; };
@@ -108,9 +118,38 @@
 		11FF7EB62105DC9300805706 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				11FF7EB72105DCD400805706 /* Service.swift */,
+				11FF7EC821062D7E00805706 /* TopTabBarItems */,
+				11FF7EC521062C4B00805706 /* Protocols */,
+				11FF7EBE21060B6400805706 /* Delegates */,
+				11FF7EBA21060A6400805706 /* AHTopTabBarViewController.swift */,
+				11FF7EBC21060AEB00805706 /* AHTopTabBarView.swift */,
+				11FF7EBF21060D4400805706 /* AHContentPageViewController.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		11FF7EBE21060B6400805706 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				11FF7EC32106247100805706 /* AHContentPageViewControllerDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		11FF7EC521062C4B00805706 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				11FF7EC621062C6600805706 /* AHTopBarItem.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		11FF7EC821062D7E00805706 /* TopTabBarItems */ = {
+			isa = PBXGroup;
+			children = (
+				11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */,
+			);
+			path = TopTabBarItems;
 			sourceTree = "<group>";
 		};
 		335CBA1CCA457C24A9635A8C0170A44E /* Products */ = {
@@ -368,8 +407,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FF7EC42106247100805706 /* AHContentPageViewControllerDelegate.swift in Sources */,
 				3F98A528D353A36B597133089E5956C9 /* AHTopTabBarViewController-dummy.m in Sources */,
-				11FF7EB82105DCD400805706 /* Service.swift in Sources */,
+				11FF7EC021060D4400805706 /* AHContentPageViewController.swift in Sources */,
+				11FF7ECA21062DAA00805706 /* AHBasicTopTabBarItem.swift in Sources */,
+				11FF7EBD21060AEB00805706 /* AHTopTabBarView.swift in Sources */,
+				11FF7EC721062C6600805706 /* AHTopBarItem.swift in Sources */,
+				11FF7EBB21060A6400805706 /* AHTopTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

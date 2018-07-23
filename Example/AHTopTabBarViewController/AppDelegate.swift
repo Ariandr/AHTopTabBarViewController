@@ -17,7 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        Service.printSomeStuff()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let blueController = ViewController()
+        let greenController = GreenViewController()
+        let contentViewController = AHContentPageViewController(viewControllers: [blueController, greenController])
+        
+        let topTabBarController = AHTopTabBarViewController(contentViewController: contentViewController)
+        
+        window?.rootViewController = topTabBarController
         
         return true
     }
