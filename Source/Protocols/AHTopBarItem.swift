@@ -8,8 +8,7 @@
 import Foundation
 
 public protocol AHTopBarItem: class {
-    associatedtype ItemType
-    func update(for item: ItemType, indexPath: IndexPath, allElementsCount: Int)
-    func setSelected(indexPath: IndexPath)
-    func setDeselected(indexPathOfSelected: IndexPath)
+    func update(with content: AHItemContent, at indexPath: IndexPath, itemsCount: Int)
+    func setSelected(at indexPath: IndexPath)
+    func setDeselected(at indexPath: IndexPath)
 }

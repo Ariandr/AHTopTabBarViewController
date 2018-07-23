@@ -11,12 +11,9 @@ open class AHTopTabBarViewController: UIViewController {
     
     // MARK: - Properties
     
-    open lazy var tabBarView: AHTopTabBarView<String> = {
-        let view = AHTopTabBarView(cellClass: DashboardTopBarCell.self, items: ["One", "Two", "Three"])
-        view.backgroundColor = .red
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    open var tabBarView: AHTopTabBarView
+    
+    open var contentViewController: AHContentPageViewController
     
     open lazy var contentView: UIView = {
         let view = UIView()
@@ -24,12 +21,11 @@ open class AHTopTabBarViewController: UIViewController {
         return view
     }()
     
-    open var contentViewController: AHContentPageViewController
-    
     // MARK: - Initializers
     
-    public init(contentViewController: AHContentPageViewController) {
+    public init(contentViewController: AHContentPageViewController, topTabBarView: AHTopTabBarView) {
         self.contentViewController = contentViewController
+        self.tabBarView = topTabBarView
         
         super.init(nibName: nil, bundle: nil)
         
@@ -53,6 +49,8 @@ open class AHTopTabBarViewController: UIViewController {
     // MARK: - Views Setup
     
     open func setupViews() {
+        tabBarView.translatesAutoresizingMaskIntoConstraints = false
+        
         view.addSubview(tabBarView)
         if #available(iOS 11.0, *) {
             tabBarView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true

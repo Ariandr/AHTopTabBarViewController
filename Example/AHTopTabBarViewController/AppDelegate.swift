@@ -24,7 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let greenController = GreenViewController()
         let contentViewController = AHContentPageViewController(viewControllers: [blueController, greenController])
         
-        let topTabBarController = AHTopTabBarViewController(contentViewController: contentViewController)
+        let topTabBarView = AHTopTabBarView(itemClass: AHTextTopBarItem.self, objects: ["hello", "two", "three"])
+        
+        let topTabBarController = AHTopTabBarViewController(contentViewController: contentViewController, topTabBarView: topTabBarView)
         
         window?.rootViewController = topTabBarController
         

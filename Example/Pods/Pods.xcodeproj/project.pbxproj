@@ -14,6 +14,8 @@
 		11FF7EC721062C6600805706 /* AHTopBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EC621062C6600805706 /* AHTopBarItem.swift */; };
 		11FF7ECA21062DAA00805706 /* AHBasicTopTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */; };
 		199D853AC81C3FB03B9A4FA652CC1097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1FE44F8121066CDA000AA16F /* AHTextTopBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE44F8021066CDA000AA16F /* AHTextTopBarItem.swift */; };
+		1FE44F83210675F3000AA16F /* AHItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE44F82210675F3000AA16F /* AHItemContent.swift */; };
 		23B4D4B6EFB43B2E8D06442A6E3ED33B /* Pods-AHTopTabBarViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A32FF0800C6ABD8C02A59740614B672B /* Pods-AHTopTabBarViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D6692730F12478C0B85C9FCBE9326E1 /* Pods-AHTopTabBarViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B47CB922A96D4496E5575C38DEDEC7F /* Pods-AHTopTabBarViewController_Tests-dummy.m */; };
 		3F98A528D353A36B597133089E5956C9 /* AHTopTabBarViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D0F705CEC0CFD9E5E73ED376B8CBF1 /* AHTopTabBarViewController-dummy.m */; };
@@ -52,6 +54,8 @@
 		11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHBasicTopTabBarItem.swift; sourceTree = "<group>"; };
 		16DB16EA11F4B50528C0B5EAD9A23A93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1889FE8827865F8C6C2F6B41037B144F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE44F8021066CDA000AA16F /* AHTextTopBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHTextTopBarItem.swift; sourceTree = "<group>"; };
+		1FE44F82210675F3000AA16F /* AHItemContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHItemContent.swift; sourceTree = "<group>"; };
 		241F11F5F692AA9C99FCD7048329871E /* AHTopTabBarViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AHTopTabBarViewController.modulemap; sourceTree = "<group>"; };
 		316D089D4F8C2E44684066F047C7D6E0 /* Pods-AHTopTabBarViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHTopTabBarViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		47741F66A99EB77260835E613C94DD92 /* AHTopTabBarViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHTopTabBarViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				11FF7EC621062C6600805706 /* AHTopBarItem.swift */,
+				1FE44F82210675F3000AA16F /* AHItemContent.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */,
+				1FE44F8021066CDA000AA16F /* AHTextTopBarItem.swift */,
 			);
 			path = TopTabBarItems;
 			sourceTree = "<group>";
@@ -412,6 +418,8 @@
 				11FF7EC021060D4400805706 /* AHContentPageViewController.swift in Sources */,
 				11FF7ECA21062DAA00805706 /* AHBasicTopTabBarItem.swift in Sources */,
 				11FF7EBD21060AEB00805706 /* AHTopTabBarView.swift in Sources */,
+				1FE44F83210675F3000AA16F /* AHItemContent.swift in Sources */,
+				1FE44F8121066CDA000AA16F /* AHTextTopBarItem.swift in Sources */,
 				11FF7EC721062C6600805706 /* AHTopBarItem.swift in Sources */,
 				11FF7EBB21060A6400805706 /* AHTopTabBarViewController.swift in Sources */,
 			);

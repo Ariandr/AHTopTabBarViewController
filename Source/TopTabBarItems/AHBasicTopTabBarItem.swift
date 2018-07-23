@@ -7,18 +7,18 @@
 
 import UIKit
 
-open class AHBasicTopTabBarItem<Item>: UICollectionViewCell, AHTopBarItem {
-    public typealias ItemType = Item
+open class AHBasicTopTabBarItem: UICollectionViewCell, AHTopBarItem {
     
-    public func update(for item: Item, indexPath: IndexPath, allElementsCount: Int) {
-        
+    public func update(with content: AHItemContent, at indexPath: IndexPath, itemsCount: Int) {
+        fatalError("Not implemented")
     }
     
-    public func setSelected(indexPath: IndexPath) {
-        
+    public func setSelected(at indexPath: IndexPath) {
+        fatalError("Not implemented")
     }
     
-    public func setDeselected(indexPathOfSelected: IndexPath) {
-        
+    public func setDeselected(at indexPath: IndexPath) {
+        fatalError("Not implemented")
     }
+    
 }
