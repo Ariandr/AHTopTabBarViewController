@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AHTopTabBarViewController_Example' do
+  pod 'AHTopTabBarViewController', :path => '../'
+
+  target 'AHTopTabBarViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
