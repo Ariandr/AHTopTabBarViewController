@@ -41,11 +41,11 @@
 		607FACE51AFB9204008FA782 /* AHTopTabBarViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHTopTabBarViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		60C7CB2FE32800E37338446B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		60C7CB2FE32800E37338446B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C92790EC06522062A9E72C14 /* Pods_AHTopTabBarViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHTopTabBarViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB01C6D2B5BF290795015445 /* Pods-AHTopTabBarViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHTopTabBarViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHTopTabBarViewController_Example/Pods-AHTopTabBarViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CB82939FFF4AA4D7BFADF085 /* AHTopTabBarViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AHTopTabBarViewController.podspec; path = ../AHTopTabBarViewController.podspec; sourceTree = "<group>"; };
-		D94EDC020A744992BC56AA18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CB82939FFF4AA4D7BFADF085 /* AHTopTabBarViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHTopTabBarViewController.podspec; path = ../AHTopTabBarViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D94EDC020A744992BC56AA18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FC1D48BB42388AB4C6CF2468 /* Pods-AHTopTabBarViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHTopTabBarViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHTopTabBarViewController_Example/Pods-AHTopTabBarViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

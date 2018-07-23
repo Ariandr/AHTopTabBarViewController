@@ -1,0 +1,22 @@
+{
+  "name": "AHTopTabBarViewController",
+  "version": "0.1.0",
+  "summary": "A short description of AHTopTabBarViewController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Ariandr/AHTopTabBarViewController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ariandr": "sanya.goncharov.1995@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Ariandr/AHTopTabBarViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AHTopTabBarViewController/Classes/**/*"
+}

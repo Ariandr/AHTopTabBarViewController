@@ -1,0 +1,16 @@
+PODS:
+  - AHTopTabBarViewController (0.1.0)
+
+DEPENDENCIES:
+  - AHTopTabBarViewController (from `../`)
+
+EXTERNAL SOURCES:
+  AHTopTabBarViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AHTopTabBarViewController: b81ede0e1a1059d71e69d8a581b5c0eb2a52de44
+
+PODFILE CHECKSUM: 0496ed0209c95bc53988bea74b351a13678c1fcf
+
+COCOAPODS: 1.5.3

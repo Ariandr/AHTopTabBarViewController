@@ -1,0 +1,6 @@
+framework module AHTopTabBarViewController {
+  umbrella header "AHTopTabBarViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
