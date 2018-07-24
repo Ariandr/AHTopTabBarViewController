@@ -34,10 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController = UINavigationController(rootViewController: topTabBarController)
         navController.tabBarItem.title = "Contoller"
         
-//        let tabBarContoller = UITabBarController()
-//        tabBarContoller.viewControllers = [navController]
+        let tabBarContoller = UITabBarController()
+        tabBarContoller.viewControllers = [navController]
         
-        window?.rootViewController = navController
+        window?.rootViewController = tabBarContoller
         
         return true
     }

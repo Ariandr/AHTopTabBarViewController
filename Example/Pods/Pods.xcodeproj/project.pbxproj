@@ -15,6 +15,8 @@
 		11FF7ECA21062DAA00805706 /* AHBasicTopTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */; };
 		11FF7ECD21072A7500805706 /* AHStaticTabsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ECC21072A7500805706 /* AHStaticTabsCollectionView.swift */; };
 		11FF7ECF2107304300805706 /* AHTopTabBarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ECE2107304300805706 /* AHTopTabBarViewDelegate.swift */; };
+		11FF7ED3210766D300805706 /* AHIconTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ED2210766D300805706 /* AHIconTabBarItem.swift */; };
+		11FF7ED52107696A00805706 /* AHTopBarItemAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ED42107696A00805706 /* AHTopBarItemAppearance.swift */; };
 		199D853AC81C3FB03B9A4FA652CC1097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		1FE44F8121066CDA000AA16F /* AHTextTopBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE44F8021066CDA000AA16F /* AHTextTopBarItem.swift */; };
 		1FE44F83210675F3000AA16F /* AHItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE44F82210675F3000AA16F /* AHItemContent.swift */; };
@@ -56,6 +58,8 @@
 		11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHBasicTopTabBarItem.swift; sourceTree = "<group>"; };
 		11FF7ECC21072A7500805706 /* AHStaticTabsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHStaticTabsCollectionView.swift; sourceTree = "<group>"; };
 		11FF7ECE2107304300805706 /* AHTopTabBarViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHTopTabBarViewDelegate.swift; sourceTree = "<group>"; };
+		11FF7ED2210766D300805706 /* AHIconTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHIconTabBarItem.swift; sourceTree = "<group>"; };
+		11FF7ED42107696A00805706 /* AHTopBarItemAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHTopBarItemAppearance.swift; sourceTree = "<group>"; };
 		16DB16EA11F4B50528C0B5EAD9A23A93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1889FE8827865F8C6C2F6B41037B144F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE44F8021066CDA000AA16F /* AHTextTopBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHTextTopBarItem.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 			children = (
 				11FF7EC621062C6600805706 /* AHTopBarItem.swift */,
 				1FE44F82210675F3000AA16F /* AHItemContent.swift */,
+				11FF7ED42107696A00805706 /* AHTopBarItemAppearance.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			children = (
 				11FF7EC921062DAA00805706 /* AHBasicTopTabBarItem.swift */,
 				1FE44F8021066CDA000AA16F /* AHTextTopBarItem.swift */,
+				11FF7ED2210766D300805706 /* AHIconTabBarItem.swift */,
 			);
 			path = TopTabBarItems;
 			sourceTree = "<group>";
@@ -428,7 +434,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FF7EC42106247100805706 /* AHContentPageViewControllerDelegate.swift in Sources */,
+				11FF7ED52107696A00805706 /* AHTopBarItemAppearance.swift in Sources */,
 				3F98A528D353A36B597133089E5956C9 /* AHTopTabBarViewController-dummy.m in Sources */,
+				11FF7ED3210766D300805706 /* AHIconTabBarItem.swift in Sources */,
 				11FF7ECD21072A7500805706 /* AHStaticTabsCollectionView.swift in Sources */,
 				11FF7EC021060D4400805706 /* AHContentPageViewController.swift in Sources */,
 				11FF7ECA21062DAA00805706 /* AHBasicTopTabBarItem.swift in Sources */,
