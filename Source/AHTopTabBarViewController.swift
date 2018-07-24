@@ -11,7 +11,7 @@ open class AHTopTabBarViewController: UIViewController {
     
     // MARK: - Properties
     
-    open var tabBarView: AHTopTabBarView
+    open var topTabBarView: AHTopTabBarView
     
     open var contentViewController: AHContentPageViewController
     
@@ -25,7 +25,7 @@ open class AHTopTabBarViewController: UIViewController {
     
     public init(contentViewController: AHContentPageViewController, topTabBarView: AHTopTabBarView) {
         self.contentViewController = contentViewController
-        self.tabBarView = topTabBarView
+        self.topTabBarView = topTabBarView
         
         super.init(nibName: nil, bundle: nil)
         
@@ -34,6 +34,7 @@ open class AHTopTabBarViewController: UIViewController {
         setupApperance()
         
         contentViewController.scrollDelegate = self
+        topTabBarView.delegate = self
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -49,27 +50,40 @@ open class AHTopTabBarViewController: UIViewController {
     // MARK: - Views Setup
     
     open func setupViews() {
-        tabBarView.translatesAutoresizingMaskIntoConstraints = false
+        topTabBarView.translatesAutoresizingMaskIntoConstraints = false
         
-        view.addSubview(tabBarView)
-        if #available(iOS 11.0, *) {
-            tabBarView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        } else {
-            tabBarView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
-        }
-        NSLayoutConstraint.activate([
-            tabBarView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tabBarView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tabBarView.heightAnchor.constraint(equalToConstant: 50)
-            ])
+        view.addSubview(topTabBarView)
+        setupTopTabBarConstraints()
         
         view.addSubview(contentView)
+        setupContentViewConstraints()
+    }
+    
+    open func setupTopTabBarConstraints() {
+        if #available(iOS 11.0, *) {
+            topTabBarView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        } else {
+            topTabBarView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
+        }
+        NSLayoutConstraint.activate([
+            topTabBarView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            topTabBarView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            topTabBarView.heightAnchor.constraint(equalToConstant: 50)
+            ])
+    }
+    
+    open func setupContentViewConstraints() {
         NSLayoutConstraint.activate([
             contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            contentView.topAnchor.constraint(equalTo: tabBarView.bottomAnchor),
-            contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            contentView.topAnchor.constraint(equalTo: topTabBarView.bottomAnchor),
+            contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
             ])
+        
+        if #available(iOS 11.0, *) {
+            contentView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        } else {
+            contentView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor).isActive = true
+        }
     }
     
     open func setupContentController() {
@@ -79,6 +93,10 @@ open class AHTopTabBarViewController: UIViewController {
         
         contentViewController.view.translatesAutoresizingMaskIntoConstraints = false
         
+        setupContentControllerConstraints()
+    }
+    
+    open func setupContentControllerConstraints() {
         NSLayoutConstraint.activate([
             contentViewController.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             contentViewController.view.topAnchor.constraint(equalTo: contentView.topAnchor),
@@ -90,10 +108,16 @@ open class AHTopTabBarViewController: UIViewController {
 
 extension AHTopTabBarViewController: AHContentPageViewControllerDelegate {
     func didSelectPage(at index: Int) {
-        print(index)
+        topTabBarView.selectItem(at: index)
     }
     
     func didScroll(_ direction: ScrollDirection, percent: CGFloat) {
-        print(percent)
+        // TODO
+    }
+}
+
+extension AHTopTabBarViewController: AHTopTabBarViewDelegate {
+    func didSelectItem(at indexPath: IndexPath) {
+        contentViewController.openPage(at: indexPath.item)
     }
 }

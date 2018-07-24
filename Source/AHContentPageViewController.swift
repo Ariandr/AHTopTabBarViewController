@@ -53,6 +53,25 @@ open class AHContentPageViewController: UIPageViewController {
     
     // MARK: - Available Methods
     
+    open func openPage(at index: Int) {
+        guard index >= 0 && index < viewControllersList.count else {
+            return
+        }
+        
+        let direction: UIPageViewControllerNavigationDirection
+        if index > currentPageIndex {
+            direction = .forward
+        } else {
+            direction = .reverse
+        }
+
+        let nextController = viewControllersList[index]
+        
+        setViewControllers([nextController], direction: direction, animated: true) { result in
+            self.currentPageIndex = index
+        }
+    }
+    
     open func openNextPage() {
         changePage(direction: .forward)
     }
@@ -69,6 +88,10 @@ open class AHContentPageViewController: UIPageViewController {
                 scrollView.delegate = self
             }
         }
+    }
+    
+    private func index(of viewController: UIViewController) -> Int? {
+        return viewControllersList.index(of: viewController)
     }
     
     private func changePage(direction: UIPageViewControllerNavigationDirection) {
@@ -178,6 +201,17 @@ extension AHContentPageViewController: UIScrollViewDelegate {
         let percent = positionFromStartOfCurrentPage / view.bounds.width
         
         scrollDelegate?.didScroll(direction, percent: percent)
+        
+        // In (rare) case when the delegate method didFinishAnimating doesn't trigger and currentPageIndex remains wrong
+        if percent == 0.0 {
+            guard let currentVC = viewControllers?.first, let currentIndex = viewControllersList.index(of: currentVC) else  {
+                return
+            }
+            
+            if currentPageIndex != currentIndex {
+                currentPageIndex = currentIndex
+            }
+        }
     }
 }
 

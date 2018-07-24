@@ -22,13 +22,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let blueController = ViewController()
         let greenController = GreenViewController()
-        let contentViewController = AHContentPageViewController(viewControllers: [blueController, greenController])
+        let yellowController = YellowViewController()
         
-        let topTabBarView = AHTopTabBarView(itemClass: AHTextTopBarItem.self, objects: ["hello", "two", "three"])
+        let contentViewController = AHContentPageViewController(viewControllers: [blueController, greenController, yellowController])
+        
+        let topTabBarView = AHTopTabBarView(objects: ["Blue", "Green", "Yellow"])
         
         let topTabBarController = AHTopTabBarViewController(contentViewController: contentViewController, topTabBarView: topTabBarView)
+        topTabBarController.title = "Controller"
         
-        window?.rootViewController = topTabBarController
+        let navController = UINavigationController(rootViewController: topTabBarController)
+        navController.tabBarItem.title = "Contoller"
+        
+//        let tabBarContoller = UITabBarController()
+//        tabBarContoller.viewControllers = [navController]
+        
+        window?.rootViewController = navController
         
         return true
     }
