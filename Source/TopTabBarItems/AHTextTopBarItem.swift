@@ -12,15 +12,19 @@ extension String: AHItemContent {
 }
 
 public struct AHTextTopBarItemAppearance: AHTopBarItemAppearance {
-    var selectedBackgroundColor = UIColor.white
-    var deselectedBackgroundColor = UIColor.red
-    var verticalLineColor = UIColor.white
-    var selectedTextColor = UIColor.black
-    var deselectedTextColor = UIColor.white
-    var selectionLineColor = UIColor.black
-    var selectionLineHeight = CGFloat(3)
-    var selectionLineWidthMultiplier = CGFloat(0.92)
-    var selectionLineCornerRadious = CGFloat(0)
+    public var selectedBackgroundColor = UIColor.white
+    public var deselectedBackgroundColor = UIColor.red
+    public var selectedVerticalLineColor = UIColor.white
+    public var deselectedVerticalLineColor = UIColor.clear
+    public var selectedTextColor = UIColor.black
+    public var deselectedTextColor = UIColor.white
+    public var textSideMargin = CGFloat(8)
+    public var selectionLineColor = UIColor.black
+    public var selectionLineHeight = CGFloat(3)
+    public var selectionLineWidthMultiplier = CGFloat(0.92)
+    public var selectionLineCornerRadious = CGFloat(0)
+    public var verticalLineWidth = CGFloat(0.5)
+    public var verticalLineHeightMultiplier = CGFloat(0.7)
 }
 
 open class AHTextTopBarItem: AHBasicTopTabBarItem {
@@ -42,7 +46,6 @@ open class AHTextTopBarItem: AHBasicTopTabBarItem {
     open let leftVerticalLine: UIView = {
         let view = UIView()
         view.isHidden = true
-        view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -50,7 +53,6 @@ open class AHTextTopBarItem: AHBasicTopTabBarItem {
     open let rightVerticalLine: UIView = {
         let view = UIView()
         view.isHidden = true
-        view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -78,22 +80,22 @@ open class AHTextTopBarItem: AHBasicTopTabBarItem {
         backgroundColor = appearance.deselectedBackgroundColor
         
         addSubview(titleLabel)
-        titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 8).isActive = true
+        titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: appearance.textSideMargin).isActive = true
         titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        titleLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -8).isActive = true
+        titleLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -appearance.textSideMargin).isActive = true
         titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
         addSubview(leftVerticalLine)
         leftVerticalLine.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         leftVerticalLine.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        leftVerticalLine.widthAnchor.constraint(equalToConstant: 0.5).isActive = true
-        leftVerticalLine.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.7).isActive = true
+        leftVerticalLine.widthAnchor.constraint(equalToConstant: appearance.verticalLineWidth).isActive = true
+        leftVerticalLine.heightAnchor.constraint(equalTo: heightAnchor, multiplier: appearance.verticalLineHeightMultiplier).isActive = true
         
         addSubview(rightVerticalLine)
         rightVerticalLine.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         rightVerticalLine.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        rightVerticalLine.widthAnchor.constraint(equalToConstant: 0.5).isActive = true
-        rightVerticalLine.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.7).isActive = true
+        rightVerticalLine.widthAnchor.constraint(equalToConstant: appearance.verticalLineWidth).isActive = true
+        rightVerticalLine.heightAnchor.constraint(equalTo: heightAnchor, multiplier: appearance.verticalLineHeightMultiplier).isActive = true
         
         addSubview(selectionLine)
         selectionLine.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
@@ -125,23 +127,23 @@ open class AHTextTopBarItem: AHBasicTopTabBarItem {
         titleLabel.textColor = appearance.selectedTextColor
         selectionLine.isHidden = false
         backgroundColor = appearance.selectedBackgroundColor
-        leftVerticalLine.backgroundColor = .clear
-        rightVerticalLine.backgroundColor = .clear
+        leftVerticalLine.backgroundColor = appearance.deselectedVerticalLineColor
+        rightVerticalLine.backgroundColor = appearance.deselectedVerticalLineColor
     }
     
     override public func setDeselected(at indexPathOfSelected: IndexPath) {
         if currentIndexPath.row - indexPathOfSelected.row == -1 {
-            leftVerticalLine.backgroundColor = appearance.verticalLineColor
-            rightVerticalLine.backgroundColor = .clear
+            leftVerticalLine.backgroundColor = appearance.selectedVerticalLineColor
+            rightVerticalLine.backgroundColor = appearance.deselectedVerticalLineColor
         } else if currentIndexPath.row - indexPathOfSelected.row < -1 {
-            leftVerticalLine.backgroundColor = appearance.verticalLineColor
-            rightVerticalLine.backgroundColor = appearance.verticalLineColor
+            leftVerticalLine.backgroundColor = appearance.selectedVerticalLineColor
+            rightVerticalLine.backgroundColor = appearance.selectedVerticalLineColor
         } else if currentIndexPath.row - indexPathOfSelected.row == 1 {
-            leftVerticalLine.backgroundColor = .clear
-            rightVerticalLine.backgroundColor = appearance.verticalLineColor
+            leftVerticalLine.backgroundColor = appearance.deselectedVerticalLineColor
+            rightVerticalLine.backgroundColor = appearance.selectedVerticalLineColor
         } else if currentIndexPath.row - indexPathOfSelected.row > 1 {
-            leftVerticalLine.backgroundColor = appearance.verticalLineColor
-            rightVerticalLine.backgroundColor = appearance.verticalLineColor
+            leftVerticalLine.backgroundColor = appearance.selectedVerticalLineColor
+            rightVerticalLine.backgroundColor = appearance.selectedVerticalLineColor
         }
         titleLabel.textColor = appearance.deselectedTextColor
         selectionLine.isHidden = true

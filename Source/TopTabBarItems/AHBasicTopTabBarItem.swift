@@ -8,7 +8,7 @@
 import UIKit
 
 open class AHBasicTopTabBarItem: UICollectionViewCell, AHTopBarItem {
-    
+
     public func update(with content: AHItemContent, at indexPath: IndexPath, itemsCount: Int) {
         fatalError("Not implemented")
     }

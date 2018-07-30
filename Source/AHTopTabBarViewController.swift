@@ -107,17 +107,17 @@ open class AHTopTabBarViewController: UIViewController {
 }
 
 extension AHTopTabBarViewController: AHContentPageViewControllerDelegate {
-    func didSelectPage(at index: Int) {
+    public func didSelectPage(at index: Int) {
         topTabBarView.selectItem(at: index)
     }
     
-    func didScroll(_ direction: ScrollDirection, percent: CGFloat) {
+    public func didScroll(_ direction: ScrollDirection, percent: CGFloat) {
         // TODO
     }
 }
 
-extension AHTopTabBarViewController: AHTopTabBarViewDelegate {
-    func didSelectItem(at indexPath: IndexPath) {
+extension AHTopTabBarViewController: AHTopBarViewDelegate {
+    public func didSelectItem(at indexPath: IndexPath) {
         contentViewController.openPage(at: indexPath.item)
     }
 }

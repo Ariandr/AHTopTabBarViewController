@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal protocol AHContentPageViewControllerDelegate: class {
+public protocol AHContentPageViewControllerDelegate: class {
     func didSelectPage(at index: Int)
     func didScroll(_ direction: ScrollDirection, percent: CGFloat)
 }

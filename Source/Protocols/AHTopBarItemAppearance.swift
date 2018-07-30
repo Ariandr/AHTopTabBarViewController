@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AHTopBarItemAppearance {
+public protocol AHTopBarItemAppearance {
     var selectedBackgroundColor: UIColor { get set }
     var deselectedBackgroundColor: UIColor { get set }
 }

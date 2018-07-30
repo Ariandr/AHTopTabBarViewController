@@ -7,6 +7,6 @@
 
 import Foundation
 
-internal protocol AHTopTabBarViewDelegate: class {
+public protocol AHTopBarViewDelegate: class {
     func didSelectItem(at indexPath: IndexPath)
 }

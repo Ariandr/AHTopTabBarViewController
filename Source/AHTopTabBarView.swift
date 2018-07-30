@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class AHTopTabBarView: UIView {
+open class AHTopTabBarView: UIView, AHTopBarView {
     
     // MARK: - Properties
     
@@ -20,13 +20,13 @@ open class AHTopTabBarView: UIView {
         return CGFloat(objects.count)
     }
     
-    weak var delegate: AHTopTabBarViewDelegate?
-    
-    open let sectionInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-    
     private var tabsCollectionView: UICollectionView
     
     private var underlineView: UIView?
+    
+    weak public var delegate: AHTopBarViewDelegate?
+    
+    open let sectionInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     
     // MARK: - Initializers
     
@@ -53,6 +53,8 @@ open class AHTopTabBarView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Initial Setup
+    
     open func registerItems() {
         self.tabsCollectionView.register(itemClass, forCellWithReuseIdentifier: String(describing: itemClass))
     }
@@ -60,6 +62,14 @@ open class AHTopTabBarView: UIView {
     open func setupDelegates() {
         self.tabsCollectionView.dataSource = self
         self.tabsCollectionView.delegate = self
+    }
+    
+    open func setupViews() {
+        addSubview(tabsCollectionView)
+        tabsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        tabsCollectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        tabsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        tabsCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
     
     // MARK: - Available Methods
@@ -76,14 +86,6 @@ open class AHTopTabBarView: UIView {
     
     open func selectItem(at index: Int) {
         selectItem(at: IndexPath(row: index, section: 0))
-    }
-    
-    open func setupViews() {
-        addSubview(tabsCollectionView)
-        tabsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        tabsCollectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        tabsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        tabsCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
 }
 
