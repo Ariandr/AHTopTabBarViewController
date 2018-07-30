@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -25,6 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let yellowController = YellowViewController()
         
         let contentViewController = AHContentPageViewController(viewControllers: [blueController, greenController, yellowController])
+        
+        AHTextTopBarItem.appearance.verticalLineHeightMultiplier = 1.0
+        AHTextTopBarItem.appearance.deselectedBackgroundColor = .lightGray
+        AHTextTopBarItem.appearance.selectedBackgroundColor = .white
+        AHTextTopBarItem.appearance.selectedVerticalLineColor = .gray
         
         let topTabBarView = AHTopTabBarView(objects: ["Blue", "Green", "Yellow"])
         
